@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acronsoft - Design System v1.0</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=emoji_objects" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,300,0,0&icon_names=settings" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="./assets/logo-cinza.png" alt="Acronsoft Logo" width="180" />
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+                <span class="nav-toggle-box">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </span>
+            </button>
+
+            <nav class="site-nav" data-nav aria-label="Navegação principal">
+                <div class="container nav-inner">
+                    <ul class="nav-list">
+
+                        <li class="nav-item nav-item--has-children">
+                            <button class="nav-link" type="button" data-submenu-trigger>
+                                <span class="nav-link-label">
+                                    <span class="nav-link-title">SOBRE NÓS</span>
+                                    <span class="nav-link-chevron">▾</span>
+                                </span>
+                            </button>
+
+                            <div class="mega">
+                                <div class="mega-inner mega-inner--with-hero">
+                                    <div class="mega-hero">
+                                        <div class="mega-hero-media"></div>
+                                        <div class="mega-hero-body">
+                                            <div class="mega-column-title">Hardware</div>
+                                            <h3 class="mega-hero-title">Equipamentos e Infraestrutura</h3>
+                                            <p class="mega-hero-text">
+                                                Notebooks, servidores, dispositivos móveis e infraestrutura física.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Computação</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Notebooks</a></li>
+                                            <li><a href="#" class="mega-list-link">Desktops</a></li>
+                                            <li><a href="#" class="mega-list-link">Workstations</a></li>
+                                            <li><a href="#" class="mega-list-link">Servidores</a></li>
+                                        </ul>
+                                        <div class="mega-column-title" style="margin-top:16px;">Mobilidade</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Smartphones & Tablets</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Periféricos</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Monitores</a></li>
+                                            <li><a href="#" class="mega-list-link">Impressoras</a></li>
+                                            <li><a href="#" class="mega-list-link">Acessórios</a></li>
+                                        </ul>
+                                        <div class="mega-column-title" style="margin-top:16px;">Automação</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Automação Comercial</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Infra & Energia</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Storage / HD / SSD</a></li>
+                                            <li><a href="#" class="mega-list-link">Switch</a></li>
+                                            <li><a href="#" class="mega-list-link">Nobreak & Estabilizadores</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nav-item--has-children">
+                            <button class="nav-link" type="button" data-submenu-trigger>
+                                <span class="nav-link-label">
+                                    <span class="nav-link-title">PRODUTOS</span>
+                                    <span class="nav-link-chevron">▾</span>
+                                </span>
+                            </button>
+
+                            <div class="mega">
+                                <div class="mega-inner mega-inner--with-hero">
+                                    <div class="mega-hero">
+                                        <div class="mega-hero-media"></div>
+                                        <div class="mega-hero-body">
+                                            <div class="mega-column-title">Hardware</div>
+                                            <h3 class="mega-hero-title">Equipamentos e Infraestrutura</h3>
+                                            <p class="mega-hero-text">
+                                                Notebooks, servidores, dispositivos móveis e infraestrutura física.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Computação</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Notebooks</a></li>
+                                            <li><a href="#" class="mega-list-link">Desktops</a></li>
+                                            <li><a href="#" class="mega-list-link">Workstations</a></li>
+                                            <li><a href="#" class="mega-list-link">Servidores</a></li>
+                                        </ul>
+                                        <div class="mega-column-title" style="margin-top:16px;">Mobilidade</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Smartphones & Tablets</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Periféricos</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Monitores</a></li>
+                                            <li><a href="#" class="mega-list-link">Impressoras</a></li>
+                                            <li><a href="#" class="mega-list-link">Acessórios</a></li>
+                                        </ul>
+                                        <div class="mega-column-title" style="margin-top:16px;">Automação</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Automação Comercial</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Infra & Energia</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Storage / HD / SSD</a></li>
+                                            <li><a href="#" class="mega-list-link">Switch</a></li>
+                                            <li><a href="#" class="mega-list-link">Nobreak & Estabilizadores</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nav-item--has-children">
+                            <button class="nav-link" type="button" data-submenu-trigger>
+                                <span class="nav-link-label">
+                                    <span class="nav-link-title">SOFTWARE</span>
+                                    <span class="nav-link-chevron">▾</span>
+                                </span>
+                            </button>
+
+                            <div class="mega">
+                                <div class="mega-inner mega-inner--with-hero">
+                                    <div class="mega-hero">
+                                        <div class="mega-hero-media"></div>
+                                        <div class="mega-hero-body">
+                                            <div class="mega-column-title">Software</div>
+                                            <h3 class="mega-hero-title">Produtividade e Segurança</h3>
+                                            <p class="mega-hero-text">Licenciamento, colaboração e proteção de dados.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Produtividade</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Microsoft 365</a></li>
+                                            <li><a href="#" class="mega-list-link">Adobe Creative Cloud</a></li>
+                                            <li><a href="#" class="mega-list-link">Acrobat / Sign</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Segurança & Backup</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Kaspersky Security</a></li>
+                                            <li><a href="#" class="mega-list-link">Acronis Backup</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Infraestrutura</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Windows Server</a></li>
+                                            <li><a href="#" class="mega-list-link">SQL Server</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nav-item--has-children">
+                            <button class="nav-link" type="button" data-submenu-trigger>
+                                <span class="nav-link-label">
+                                    <span class="nav-link-title">SOLUÇÕES &amp; CLOUD</span>
+                                    <span class="nav-link-chevron">▾</span>
+                                </span>
+                            </button>
+
+                            <div class="mega">
+                                <div class="mega-inner mega-inner--with-hero">
+                                    <div class="mega-hero">
+                                        <div class="mega-hero-media"></div>
+                                        <div class="mega-hero-body">
+                                            <div class="mega-column-title">Soluções</div>
+                                            <h3 class="mega-hero-title">Cloud e Serviços Gerenciados</h3>
+                                            <p class="mega-hero-text">Infraestrutura escalável e gestão especializada.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Cloud</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Data Center & Cloud</a></li>
+                                            <li><a href="#" class="mega-list-link">IaaS</a></li>
+                                            <li><a href="#" class="mega-list-link">BaaS (Backup)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Gestão</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Management & NOC</a></li>
+                                            <li><a href="#" class="mega-list-link">Networking & Segurança</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Governança</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Governança & Compliance</a></li>
+                                            <li><a href="#" class="mega-list-link">Consultorias</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nav-item--has-children">
+                            <button class="nav-link" type="button" data-submenu-trigger>
+                                <span class="nav-link-label">
+                                    <span class="nav-link-title">SERVIÇOS</span>
+                                    <span class="nav-link-chevron">▾</span>
+                                </span>
+                            </button>
+
+                            <div class="mega">
+                                <div class="mega-inner mega-inner--with-hero">
+                                    <div class="mega-hero">
+                                        <div class="mega-hero-media"></div>
+                                        <div class="mega-hero-body">
+                                            <div class="mega-column-title">Serviços</div>
+                                            <h3 class="mega-hero-title">Suporte e Consultoria</h3>
+                                            <p class="mega-hero-text">Apoio técnico do projeto à operação contínua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Projetos</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Implementação & Migração</a></li>
+                                            <li><a href="#" class="mega-list-link">Consultoria</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Gestão</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Gestão de Identidade</a></li>
+                                            <li><a href="#" class="mega-list-link">Gestão de Segurança</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Operação</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Suporte Continuado</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nav-item--has-children">
+                            <button class="nav-link" type="button" data-submenu-trigger>
+                                <span class="nav-link-label">
+                                    <span class="nav-link-title">APPLE NOS NEGÓCIOS</span>
+                                    <span class="nav-link-chevron">▾</span>
+                                </span>
+                            </button>
+
+                            <div class="mega">
+                                <div class="mega-inner mega-inner--with-hero">
+                                    <div class="mega-hero">
+                                        <div class="mega-hero-media"></div>
+                                        <div class="mega-hero-body">
+                                            <div class="mega-column-title">Apple</div>
+                                            <h3 class="mega-hero-title">Ecossistema Apple</h3>
+                                            <p class="mega-hero-text">iPhone, Mac e iPad integrados à sua empresa.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Dispositivos</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">iPhone</a></li>
+                                            <li><a href="#" class="mega-list-link">iPad</a></li>
+                                            <li><a href="#" class="mega-list-link">Mac</a></li>
+                                            <li><a href="#" class="mega-list-link">Apple TV</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column">
+                                        <div class="mega-column-title">Soluções</div>
+                                        <ul class="mega-list">
+                                            <li><a href="#" class="mega-list-link">Apple Business Manager</a></li>
+                                            <li><a href="#" class="mega-list-link">Apple Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-list-column"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nav-item--has-children">
+                            <button class="nav-link" type="button" data-submenu-trigger>
+                                <span class="nav-link-label">
+                                    <span class="nav-link-title">CONTATO</span>
+                                    <span class="nav-link-chevron">▾</span>
+                                </span>
+                            </button>
+
+                            <div class="mega">
+                                <div class="mega-inner mega-inner--with-hero">
+                                    <div class="mega-hero">
+                                        <div class="mega-hero-media"></div>
+                                        <div class="mega-hero-body">
+                                            <div class="mega-column-title">Hardware</div>
+                                            <h3 class="mega-hero-title">Equipamentos e Infraestrutura</h3>
+                                            <p class="mega-hero-text">
+                                                Notebooks, servidores, dispositivos móveis e infraestrutura física.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container stack stack--lg">
+            <h1 class="h1">Design System Acronsoft</h1>
+            <p class="body-lg" style="max-width: 72ch; color: var(--color-neutral-700);">
+                Validação visual dos componentes, cores e tipografia baseados no Design Tokens v1.0.
+            </p>
+            <div class="inline-row">
+                <button class="btn btn--primary btn--lg">Ação principal</button>
+                <button class="btn btn--secondary btn--lg">Ação secundária</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="cores">
+        <div class="container stack stack--lg">
+            <h2 class="h2">Cores (Color System)</h2>
+
+            <h3 class="h3">2.1 Paleta Principal</h3>
+            <div class="grid grid-4">
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-brand-primary);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Primary / Brand Blue</div>
+                        <div class="swatch__token">#2563EB</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-brand-secondary);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Secondary / Action Orange</div>
+                        <div class="swatch__token">#FF8A00</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-brand-dark);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Dark Blue</div>
+                        <div class="swatch__token">#0F1F3D</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-brand-terciary);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Cherry</div>
+                        <div class="swatch__token">#cd363a</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="h3">2.2 Neutros</h3>
+            <div class="grid grid-4">
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-neutral-900);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Neutral 900 (títulos)</div>
+                        <div class="swatch__token">#0B1220</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-neutral-700);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Neutral 700 (texto)</div>
+                        <div class="swatch__token">#3A3F4B</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-neutral-500);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Neutral 500 (secundário)</div>
+                        <div class="swatch__token">#6B7280</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-neutral-300);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Neutral 300 (bordas)</div>
+                        <div class="swatch__token">#D1D5DB</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-neutral-100);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Neutral 100 (bg suave)</div>
+                        <div class="swatch__token">#F4F6F8</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color"
+                        style="background: var(--color-neutral-0); border-bottom:1px solid #eee;"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">White / Neutral 0</div>
+                        <div class="swatch__token">#FFFFFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="h3">2.3 Cores Semânticas</h3>
+            <div class="grid grid-4">
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-success);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Success</div>
+                        <div class="swatch__token">#16A34A</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-warning);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Warning</div>
+                        <div class="swatch__token">#F59E0B</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-error);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Error</div>
+                        <div class="swatch__token">#DC2626</div>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch__color" style="background: var(--color-info);"></div>
+                    <div class="swatch__meta">
+                        <div class="swatch__name">Info</div>
+                        <div class="swatch__token">#1F4ED8</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft" id="tipografia">
+        <div class="container stack stack--lg">
+            <h2 class="h2">Tipografia</h2>
+
+            <div class="grid grid-2">
+                <div class="panel stack">
+                    <h3 class="h3">Font Family & Weights</h3>
+                    <p class="body" style="font-family: var(--font-family-base);">
+                        <strong>Primary Font:</strong> Inter (Sans-serif)
+                    </p>
+                    <div class="divider"></div>
+                    <div class="stack stack--sm">
+                        <div style="font-weight: 400;">Regular (400) - The quick brown fox jumps over the lazy dog.
+                        </div>
+                        <div style="font-weight: 500;">Medium (500) - The quick brown fox jumps over the lazy dog.</div>
+                        <div style="font-weight: 600;">Semibold (600) - The quick brown fox jumps over the lazy dog.
+                        </div>
+                        <div style="font-weight: 700;">Bold (700) - The quick brown fox jumps over the lazy dog.</div>
+                    </div>
+                </div>
+
+                <div class="panel stack">
+                    <h3 class="h3">Scale (Headings)</h3>
+                    <div class="stack stack--sm">
+                        <div style="display:flex; align-items:baseline; gap:16px;">
+                            <span class="small muted" style="width:40px;">H1</span>
+                            <h1 class="h1">Display 48px</h1>
+                        </div>
+                        <div style="display:flex; align-items:baseline; gap:16px;">
+                            <span class="small muted" style="width:40px;">H2</span>
+                            <h2 class="h2">Heading 32px</h2>
+                        </div>
+                        <div style="display:flex; align-items:baseline; gap:16px;">
+                            <span class="small muted" style="width:40px;">H3</span>
+                            <h3 class="h3">Heading 24px</h3>
+                        </div>
+                        <div style="display:flex; align-items:baseline; gap:16px;">
+                            <span class="small muted" style="width:40px;">H4</span>
+                            <h4 class="h4">Heading 20px</h4>
+                        </div>
+                        <div style="display:flex; align-items:baseline; gap:16px;">
+                            <span class="small muted" style="width:40px;">Body</span>
+                            <p class="body">Body Base 16px</p>
+                        </div>
+                        <div style="display:flex; align-items:baseline; gap:16px;">
+                            <span class="small muted" style="width:40px;">Small</span>
+                            <p class="small">Small Text 14px</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="botoes">
+        <div class="container stack stack--lg">
+            <h2 class="h2">Botões</h2>
+            <p class="small muted">Tokens aplicados: Radius SM, Height (36/44/52px), Hover states.</p>
+
+            <div class="panel stack">
+                <div class="inline-row">
+                    <button class="btn btn--primary btn--sm">Primary SM</button>
+                    <button class="btn btn--primary btn--md">Primary MD</button>
+                    <button class="btn btn--primary btn--lg">Primary LG</button>
+                    <button class="btn btn--primary btn--md" disabled>Primary Disabled</button>
+                </div>
+                <div class="inline-row">
+                    <button class="btn btn--secondary btn--sm">Secondary SM</button>
+                    <button class="btn btn--secondary btn--md">Secondary MD</button>
+                    <button class="btn btn--secondary btn--lg">Secondary LG</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft" id="cards">
+        <div class="container stack stack--lg">
+            <h2 class="h2">Cards</h2>
+            <p class="small muted">Padding 24px, Radius 8px, Shadow sutis.</p>
+
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3 class="card__title">Card Padrão</h3>
+                    <p class="card__text">
+                        Este card utiliza padding de 24px, borda neutral-300 e radius-md.
+                    </p>
+                    <div class="card__footer">
+                        <button class="btn btn--secondary btn--sm">Detalhes</button>
+                        <button class="btn btn--primary btn--sm">Ação</button>
+                    </div>
+                </article>
+
+                <article class="card" style="border-color: rgba(31, 78, 216, 0.25);">
+                    <h3 class="card__title">Card Destaque</h3>
+                    <p class="card__text">
+                        Exemplo com borda sutil da marca. O espaçamento interno garante boa leitura.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="icones">
+        <div class="container stack stack--lg">
+            <h2 class="h2">Iconografia</h2>
+            <p class="small muted">Tokens: Stroke 1.5px, Estilo Outline.</p>
+
+            <div class="panel">
+                <div class="inline-row" style="gap: 48px;">
+                    <div style="text-align:center;">
+                        <span class="material-symbols-rounded material-icons-sm">settings</span>
+                        <p class="small muted" style="margin-top:8px;">SM (16px)</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <span class="material-symbols-rounded material-icons-md">token</span>
+                        <p class="small muted" style="margin-top:8px;">MD (20px)</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <span class="material-symbols-rounded material-icons-lg">browse_activity</span>
+                        <p class="small muted" style="margin-top:8px;">LG (24px)</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <span class="material-symbols-rounded material-icons-xg">send_time_extension</span>
+                        <p class="small muted" style="margin-top:8px;">XG (32px)</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <span class="material-symbols-rounded material-icons-xxg">emoji_objects</span>
+                        <p class="small muted" style="margin-top:8px;">XXG (36px)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container stack stack--lg">
+            <h2 class="h2">Padrão: Benefícios</h2>
+            <div class="grid grid-3">
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                            <path
+                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="h3">Suporte Premium</h3>
+                    <p class="body">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="h3">Monitoramento</h3>
+                    <p class="body">Dashboards em tempo real para visualização completa da infraestrutura.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="stack stack--sm">
+                        <h3 class="h3">Segurança Total</h3>
+                        <p class="body">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <span class="material-symbols-rounded material-icons-xxg">workspace_premium</span>
+                    </div>
+                    <h3 class="h3">Suporte Premium</h3>
+                    <p class="body">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="h3">Monitoramento</h3>
+                    <p class="body">Dashboards em tempo real para visualização completa da infraestrutura.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="stack stack--sm">
+                        <h3 class="h3">Segurança Total</h3>
+                        <p class="body">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                            <path
+                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="h3">Suporte Premium</h3>
+                    <p class="body">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="h3">Monitoramento</h3>
+                    <p class="body">Dashboards em tempo real para visualização completa da infraestrutura.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <svg class="icon icon--lg" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="stack stack--sm">
+                        <h3 class="h3">Segurança Total</h3>
+                        <p class="body">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container stack stack--lg">
+
+            <div class="stack stack--sm" style="text-align: center;">
+                <h2 class="h2">Quer Simplificar a Gestão de Dispositivos?</h2>
+                <p class="body">
+                    Fale com <strong>nossos especialistas</strong> e descubra a solução ideal para o seu ambiente.
+                </p>
+            </div>
+
+            <form class="grid grid-2" style="gap: var(--space-4); max-width: 800px; margin-inline: auto;">
+
+                <!-- Linha 1 -->
+                <input type="text" name="nome" placeholder="Nome" class="form-control" required />
+                <input type="text" name="empresa" placeholder="Empresa" class="form-control" required />
+
+                <!-- Linha 2 -->
+                <input type="tel" name="telefone" placeholder="Telefone" class="form-control" required />
+                <input type="email" name="email" placeholder="Email" class="form-control" required />
+
+                <!-- Linha 3 – textarea full width -->
+                <textarea name="mensagem" placeholder="Mensagem" rows="4" class="form-control"
+                    style="grid-column: 1 / -1;" required></textarea>
+
+                <!-- Linha 4 – checkbox abaixo do textarea -->
+                <label style="
+          grid-column: 1 / -1;
+          display: flex;
+          align-items: flex-start;
+          gap: var(--space-2);
+          font-size: var(--font-size-sm);
+          color: var(--color-neutral-500);
+        ">
+                    <input type="checkbox" name="newsletter" style="width: 16px; height: 16px; margin-top: 3px;" />
+                    Gostaria de receber por e-mail novidades e promoções da ACRONSOFT?
+                </label>
+
+                <!-- Linha 5 – CTA -->
+                <div style="grid-column: 1 / -1; text-align: left;">
+                    <button type="submit" class="btn btn--primary btn--lg">
+                        Solicitar diagnóstico gratuito
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="section section--cta-dark">
+        <div class="container stack stack--lg" style="align-items:center;">
+            <h2 class="h2">Pronto para transformar sua TI?</h2>
+            <p class="body-lg" style="max-width: 60ch; margin:0 auto; opacity: 0.9;">
+                Fale com nossos especialistas e descubra como a Acronsoft pode escalar seu negócio.
+            </p>
+            <button class="btn btn--primary btn--lg">Falar com Vendas</button>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container" style="display:flex; flex-direction:column; gap:32px;">
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:32px;">
+                <div class="stack stack--sm">
+                    <div
+                        style="font-weight:700; font-size:20px; color:#fff; display:flex; align-items:center; gap:8px;">
+                        <a href="#" class="logo">
+                            <img src="./assets/logo-branco.png" alt="Acronsoft Logo" width="150" />
+                        </a>
+                    </div>
+                    <div class="grid grid-3" style="gap: 48px;">
+                        <div class="stack stack--sm">
+                            <strong style="color:#fff;">Empresa</strong>
+                            <a href="#">Sobre nós</a>
+                            <a href="#">Carreiras</a>
+                        </div>
+                        <div class="stack stack--sm">
+                            <strong style="color:#fff;">Suporte</strong>
+                            <a href="#">Central de Ajuda</a>
+                            <a href="#">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider" style="opacity: 0.1; background:#fff;"></div>
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+                    <p>© 2024 Acronsoft. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
