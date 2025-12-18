@@ -87,18 +87,6 @@
   --motion-base: 250ms ease-in-out;
 }
 
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-}
-
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -155,7 +143,7 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   color: var(--color-neutral-700);
-  background: var(--color-neutral-100);
+  background: var(--color-neutral-0);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -185,8 +173,8 @@ button {
 .h3 { font-size: var(--h3-size); line-height: var(--h3-lh); font-weight: var(--h3-weight); }
 .h4 { font-size: var(--h4-size); line-height: var(--h4-lh); font-weight: var(--h4-weight); }
 
-.body { font-size: var(--font-size-base); }
-.body-lg { font-size: var(--font-size-md); line-height: var(--line-height-relaxed); }
+.body-intern { font-size: var(--color-neutral-900); }
+.body-intern-lg { font-size: var(--font-size-md); line-height: var(--line-height-relaxed); }
 .small { font-size: var(--font-size-sm); }
 .muted { color: var(--color-neutral-500); }
 
@@ -194,8 +182,8 @@ button {
   font-variation-settings:
   'FILL' 0,
   'wght' 200,
-  'GRAD' 0,
-  'opsz' 24
+  'GRAD' 200,
+  'opsz' 40
 }
 
 /* =========================
@@ -260,6 +248,115 @@ button {
 /* =========================
    COMPONENTS
    ========================= */
+   .table {
+  width: 100%;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--radius-md);
+  background: var(--color-neutral-0);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.table thead {
+  background: var(--color-neutral-100);
+}
+
+.table th {
+  padding: var(--space-3) var(--space-5);
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-900);
+  text-align: left;
+  border-bottom: 1px solid var(--color-neutral-300);
+  white-space: nowrap;
+}
+.table tbody tr {
+  min-height: 52px;
+  transition: background var(--motion-fast);
+}
+
+.table tbody tr:hover {
+  background: rgba(31, 78, 216, 0.04);
+}
+
+.table tbody tr.is-selected {
+  background: rgba(31, 78, 216, 0.08);
+}
+.table td {
+  padding: var(--space-3) var(--space-5);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-neutral-700);
+  border-bottom: 1px solid var(--color-neutral-300);
+}
+.table .text-secondary {
+  font-size: 12px;
+  color: var(--color-neutral-500);
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+}
+
+.status--active {
+  background: rgba(22,163,74,0.12);
+  color: var(--color-success);
+}
+
+.status--pending {
+  background: rgba(245,158,11,0.14);
+  color: var(--color-warning);
+}
+
+.status--inactive {
+  background: rgba(220,38,38,0.12);
+  color: var(--color-error);
+}
+.table-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+.table-action {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-500);
+  cursor: pointer;
+}
+
+.table-action:hover {
+  background: rgba(31,78,216,0.08);
+  color: var(--color-brand-primary);
+}
+.table-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-brand-primary);
+  cursor: pointer;
+}
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 0 var(--space-5);
+  border-top: 1px solid var(--color-neutral-300);
+  font-size: 12px;
+  color: var(--color-neutral-500);
+  background: var(--color-neutral-0);
+}
+
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -300,6 +397,16 @@ button {
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+.btn--tertiary {
+  background: transparent;
+  color: var(--color-brand-primary);
+  border-color: transparent;
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+.btn--tertiary:hover {
+  background: rgba(31, 78, 216, 0.08);
 }
 
 /* CTA Nav Button */
@@ -581,19 +688,33 @@ textarea.form-control {
 /* =========================
    CARDS
    ========================= */
-.card {
+.card-transparent {
   display: flex;
   flex-direction: column;
-  background: var(--color-neutral-0);
-  border: 1px solid var(--color-neutral-300);
+  background: transparent;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: var(--space-5);
   transition: all var(--motion-base);
 }
-.card:hover {
+.card-transparent:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(209, 213, 219, 0.7);
+}
+  .card-light {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-neutral-100);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+  transition: all var(--motion-base);
+}
+.card-light:hover {
+  transform: translateY(-2px);
+  background: var(--color-neutral-200);
+  box-shadow: var(--shadow-sm);
   border-color: rgba(209, 213, 219, 0.7);
 }
 .card__title {
@@ -698,8 +819,41 @@ textarea.form-control {
   justify-content: center;
   padding: 0;
   background: transparent;
-  color: var(--color-brand-primary);
 }
+.benefit-icon-box-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  min-width: 100%;
+}
+
+.benefit-icon-box .as-icon,
+.benefit-icon-box .as-icon-blue {
+  margin-right: var(--space-4);
+}
+
+.as-icon {
+  color: var(--color-neutral-900);
+  transition: color 150ms ease;
+}
+.as-icon-blue {
+  color: var(--color-brand-primary);
+  transition: color 150ms ease;
+}
+
+.card-light:hover .as-icon-blue,
+.card-transparent:hover .as-icon-blue {
+  color: var(--color-brand-secondary);
+}
+
+.card-light:hover .as-icon,
+.card-transparent:hover .as-icon {
+  color: var(--color-brand-terciary);
+}
+
+
 
 /* Section Hero */
 .hero {
@@ -719,6 +873,7 @@ textarea.form-control {
   height: 1px;
   width: 100%;
   background: var(--color-neutral-200);
+  margin: var(--space-6) 0;
 }
 
 .mandala {

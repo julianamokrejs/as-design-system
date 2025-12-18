@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=emoji_objects" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,300,0,0&icon_names=settings" />
-    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -489,14 +487,14 @@
         </div>
     </section>
 
-    <section class="section section--soft" id="tipografia">
+    <section class="section " id="tipografia">
         <div class="container stack stack--lg">
             <h2 class="h2">Tipografia</h2>
 
             <div class="grid grid-2">
                 <div class="panel stack">
                     <h3 class="h3">Font Family & Weights</h3>
-                    <p class="body" style="font-family: var(--font-family-base);">
+                    <p class="body-intern" style="font-family: var(--font-family-base);">
                         <strong>Primary Font:</strong> Inter (Sans-serif)
                     </p>
                     <div class="divider"></div>
@@ -531,7 +529,7 @@
                         </div>
                         <div style="display:flex; align-items:baseline; gap:16px;">
                             <span class="small muted" style="width:40px;">Body</span>
-                            <p class="body">Body Base 16px</p>
+                            <p class="body-intern">Body Base 16px</p>
                         </div>
                         <div style="display:flex; align-items:baseline; gap:16px;">
                             <span class="small muted" style="width:40px;">Small</span>
@@ -559,12 +557,19 @@
                     <button class="btn btn--secondary btn--sm">Secondary SM</button>
                     <button class="btn btn--secondary btn--md">Secondary MD</button>
                     <button class="btn btn--secondary btn--lg">Secondary LG</button>
+                    <button class="btn btn--secondary btn--md" disabled>Secondary Disabled</button>
+                </div>
+                <div class="inline-row">
+                    <button class="btn btn--tertiary btn--sm">Terciary SM</button>
+                    <button class="btn btn--tertiary btn--md">Terciary MD</button>
+                    <button class="btn btn--tertiary btn--lg">Terciary LG</button>
+                    <button class="btn btn--tertiary btn--md" disabled>Terciary Disabled</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section--soft" id="cards">
+    <section class="section " id="cards">
         <div class="container stack stack--lg">
             <h2 class="h2">Cards</h2>
             <p class="small muted">Padding 24px, Radius 8px, Shadow sutis.</p>
@@ -599,23 +604,23 @@
             <div class="panel">
                 <div class="inline-row" style="gap: 48px;">
                     <div style="text-align:center;">
-                        <span class="material-symbols-rounded material-icons-sm">settings</span>
+                        <span class="as-icon material-symbols-outlined material-icons-sm">settings</span>
                         <p class="small muted" style="margin-top:8px;">SM (16px)</p>
                     </div>
                     <div style="text-align:center;">
-                        <span class="material-symbols-rounded material-icons-md">token</span>
+                        <span class="as-icon material-symbols-outlined material-icons-md">token</span>
                         <p class="small muted" style="margin-top:8px;">MD (20px)</p>
                     </div>
                     <div style="text-align:center;">
-                        <span class="material-symbols-rounded material-icons-lg">browse_activity</span>
+                        <span class="as-icon material-symbols-outlined material-icons-lg">browse_activity</span>
                         <p class="small muted" style="margin-top:8px;">LG (24px)</p>
                     </div>
                     <div style="text-align:center;">
-                        <span class="material-symbols-rounded material-icons-xg">send_time_extension</span>
+                        <span class="as-icon material-symbols-outlined material-icons-xg">send_time_extension</span>
                         <p class="small muted" style="margin-top:8px;">XG (32px)</p>
                     </div>
                     <div style="text-align:center;">
-                        <span class="material-symbols-rounded material-icons-xxg">emoji_objects</span>
+                        <span class="as-icon material-symbols-outlined material-icons-xxg">emoji_objects</span>
                         <p class="small muted" style="margin-top:8px;">XXG (36px)</p>
                     </div>
                 </div>
@@ -623,123 +628,305 @@
         </div>
     </section>
 
-    <section class="section section--soft">
+    <section class="section ">
         <div class="container stack stack--lg">
             <h2 class="h2">Padrão: Benefícios</h2>
             <div class="grid grid-3">
-                <div class="benefit-item">
+                <div class="benefit-item card-light">
                     <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-                            <path
-                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
-                            </path>
-                        </svg>
+                        <span class="as-icon-blue material-symbols-outlined material-icons-xxg">crown</span>
+                        <div class="stack stack--sm">
+                            <h3 class="h4">Suporte Premium</h3>
+                            <p class="body-intern">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
+                        </div>
                     </div>
-                    <h3 class="h3">Suporte Premium</h3>
-                    <p class="body">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
+                
                 </div>
-                <div class="benefit-item">
+                <div class="benefit-item card-light">
                     <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
+                        <span class="as-icon-blue material-symbols-outlined material-icons-xxg">dashboard_2_gear</span>
+                         <div class="stack stack--sm">
+                            <h3 class="h4">Monitoramento</h3>
+                            <p class="body-intern">Dashboards em tempo real para visualização completa da infraestrutura.</p>
+                         </div>
                     </div>
-                    <h3 class="h3">Monitoramento</h3>
-                    <p class="body">Dashboards em tempo real para visualização completa da infraestrutura.</p>
                 </div>
-                <div class="benefit-item">
+                <div class="benefit-item card-light">
                     <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <div class="stack stack--sm">
-                        <h3 class="h3">Segurança Total</h3>
-                        <p class="body">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
+                        <span class="as-icon-blue material-symbols-outlined material-icons-xxg">security</span>
+                        <div class="stack stack--sm">
+                             <h3 class="h4">Segurança Total</h3>
+                            <p class="body-intern">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <hr class="divider" />
+
             <div class="grid grid-3">
-                <div class="benefit-item">
-                    <div class="benefit-icon-box">
-                        <span class="material-symbols-rounded material-icons-xxg">workspace_premium</span>
+                <div class="benefit-item card-transparent">
+                    <div class="benefit-icon-box-center">
+                        <span class="as-icon material-symbols-outlined material-icons-xxg">crown</span>
                     </div>
-                    <h3 class="h3">Suporte Premium</h3>
-                    <p class="body">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
+                    <h3 class="h4">Suporte Premium</h3>
+                    <p class="body-intern">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
+                <div class="benefit-item card-transparent">
+                    <div class="benefit-icon-box-center">
+                        <span class="as-icon material-symbols-outlined material-icons-xxg">dashboard_2_gear</span>
                     </div>
-                    <h3 class="h3">Monitoramento</h3>
-                    <p class="body">Dashboards em tempo real para visualização completa da infraestrutura.</p>
+                    <h3 class="h4">Monitoramento</h3>
+                    <p class="body-intern">Dashboards em tempo real para visualização completa da infraestrutura.</p>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
+                <div class="benefit-item card-transparent">
+                    <div class="benefit-icon-box-center">
+                        <span class="as-icon material-symbols-outlined material-icons-xxg">security</span>
                     </div>
                     <div class="stack stack--sm">
-                        <h3 class="h3">Segurança Total</h3>
-                        <p class="body">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
+                        <h3 class="h4">Segurança Total</h3>
+                        <p class="body-intern">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-3">
-                <div class="benefit-item">
-                    <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-                            <path
-                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="h3">Suporte Premium</h3>
-                    <p class="body">Equipe dedicada disponível 24/7 para garantir a continuidade da sua operação.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3 class="h3">Monitoramento</h3>
-                    <p class="body">Dashboards em tempo real para visualização completa da infraestrutura.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon-box">
-                        <svg class="icon icon--lg" viewBox="0 0 24 24">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <div class="stack stack--sm">
-                        <h3 class="h3">Segurança Total</h3>
-                        <p class="body">Proteção de ponta a ponta com as melhores práticas de cybersecurity.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <section class="section section--soft">
+   
+            
+            
+            <!-- 2 Tabelas Acronsoft (v1) — sem checkbox — uma com zebra rows -->
+<section class="section">
+  <div class="container stack stack--lg">
+    <h2 class="h2">Padrão: Tabela</h2>
+    <!-- TABELA 1: Clientes / Assinaturas (sem zebra) -->
+    <div class="stack" style="gap: var(--space-3);">
+      <div class="stack" style="gap: 4px;">
+        <h2 class="h3" style="margin:0; color: var(--color-neutral-900);">Clientes e Assinaturas</h2>
+        <p class="small" style="margin:0; color: var(--color-neutral-500);">
+          Exemplo de tabela operacional com status + plano + ações.
+        </p>
+      </div>
+
+      <table class="table" style="width:100%;">
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Status</th>
+            <th>Plano</th>
+            <th>Última cobrança</th>
+            <th style="text-align:right;">Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              Empresa Alpha
+              <div class="text-secondary">alpha@empresa.com</div>
+            </td>
+            <td><span class="status status--active">Ativo</span></td>
+            <td>Enterprise</td>
+            <td>10/12/2025</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Mais opções">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Beta Logística
+              <div class="text-secondary">financeiro@betalogs.com</div>
+            </td>
+            <td><span class="status status--pending">Pendente</span></td>
+            <td>Pro</td>
+            <td>—</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Mais opções">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="is-selected">
+            <td>
+              Gamma Serviços
+              <div class="text-secondary">ops@gamma.com.br</div>
+            </td>
+            <td><span class="status status--active">Ativo</span></td>
+            <td>Business</td>
+            <td>02/12/2025</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Mais opções">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Delta Tech
+              <div class="text-secondary">admin@deltatech.io</div>
+            </td>
+            <td><span class="status status--inactive">Inativo</span></td>
+            <td>Free</td>
+            <td>18/10/2025</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Mais opções">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Epsilon Foods
+              <div class="text-secondary">pagamentos@epsilonfoods.com</div>
+            </td>
+            <td><span class="status status--pending">Pendente</span></td>
+            <td>Pro</td>
+            <td>—</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Mais opções">⋯</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="table-footer">
+        <span>Exibindo 5 de 128 clientes</span>
+        <span>Página 1 de 26</span>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- TABELA 2: Auditoria / Logs (COM zebra rows) -->
+    <div class="stack" style="gap: var(--space-3);">
+      <div class="stack" style="gap: 4px;">
+        <h2 class="h3" style="margin:0; color: var(--color-neutral-900);">Logs de Auditoria</h2>
+        <p class="small" style="margin:0; color: var(--color-neutral-500);">
+          Exemplo de tabela densa (muitas linhas) com zebra rows para aumentar escaneabilidade.
+        </p>
+      </div>
+
+      <!-- estilos de zebra no próprio trecho (mantém o DS limpo) -->
+      <style>
+        .table.is-zebra tbody tr:nth-child(even) { background: var(--color-neutral-100); }
+        .table.is-zebra tbody tr:hover { background: rgba(31, 78, 216, 0.04); }
+        .table.is-zebra tbody tr.is-selected { background: rgba(31, 78, 216, 0.08); }
+      </style>
+
+      <table class="table is-zebra" style="width:100%;">
+        <thead>
+          <tr>
+            <th>Evento</th>
+            <th>Usuário</th>
+            <th>Origem</th>
+            <th>Data/Hora</th>
+            <th style="text-align:right;">Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              Login realizado
+              <div class="text-secondary">Sucesso • MFA</div>
+            </td>
+            <td>Marina S.</td>
+            <td class="text-secondary">Web • IP 187.12.***.***</td>
+            <td>18/12/2025 09:14</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Ver detalhes">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Alteração de permissão
+              <div class="text-secondary">Perfil: Operações → Admin</div>
+            </td>
+            <td>Diego R.</td>
+            <td class="text-secondary">Web • IP 200.10.***.***</td>
+            <td>17/12/2025 18:02</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Ver detalhes">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="is-selected">
+            <td>
+              Exportação de relatório
+              <div class="text-secondary">CSV • Clientes</div>
+            </td>
+            <td>Ana P.</td>
+            <td class="text-secondary">API • Token</td>
+            <td>17/12/2025 11:27</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Ver detalhes">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Falha de login
+              <div class="text-secondary">Senha incorreta • 3 tentativas</div>
+            </td>
+            <td>Usuário desconhecido</td>
+            <td class="text-secondary">Web • IP 45.90.***.***</td>
+            <td>16/12/2025 22:41</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Ver detalhes">⋯</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Atualização de cadastro
+              <div class="text-secondary">Campos: endereço, telefone</div>
+            </td>
+            <td>Marcos L.</td>
+            <td class="text-secondary">Mobile • iOS</td>
+            <td>16/12/2025 10:08</td>
+            <td>
+              <div class="table-actions">
+                <span class="table-action" title="Ver detalhes">⋯</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="table-footer">
+        <span>Últimos 5 eventos • Total: 12.482</span>
+        <span>Filtros: Últimos 7 dias</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <section class="section ">
         <div class="container stack stack--lg">
 
             <div class="stack stack--sm" style="text-align: center;">
                 <h2 class="h2">Quer Simplificar a Gestão de Dispositivos?</h2>
-                <p class="body">
+                <p class="body-intern">
                     Fale com <strong>nossos especialistas</strong> e descubra a solução ideal para o seu ambiente.
                 </p>
             </div>
