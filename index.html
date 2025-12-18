@@ -16,346 +16,407 @@
 
 <body>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-                <img src="./assets/logo-cinza.png" alt="Acronsoft Logo" width="180" />
-            </a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <img src="./assets/logo-cinza.png" alt="Acronsoft Logo" width="180" />
+    </a>
 
-            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
-                <span class="nav-toggle-box">
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+      <span class="nav-toggle-box">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </span>
+    </button>
+
+    <nav class="site-nav" data-nav aria-label="Navegação principal">
+      <div class="container nav-inner">
+        <ul class="nav-list">
+
+          <!-- SOLUÇÕES -->
+          <li class="nav-item nav-item--has-children">
+            <button class="nav-link" type="button" data-submenu-trigger>
+              <span class="nav-link-label">
+                <span class="nav-link-title">SOLUÇÕES</span>
+                <span class="nav-link-chevron">▾</span>
+              </span>
+            </button>
+
+            <div class="mega">
+              <div class="mega-inner mega-inner--with-hero">
+                <div class="mega-hero">
+                  <div class="mega-hero-media"></div>
+                  <div class="mega-hero-body">
+                    <div class="mega-column-title">Soluções Estratégicas</div>
+                    <h3 class="mega-hero-title">Tecnologia para Resultados Reais</h3>
+                    <p class="mega-hero-text">
+                      Infraestrutura, segurança, produtividade e dados integrados ao seu negócio.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Cloud & Infraestrutura</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Cloud (Azure / AWS / Google)</a></li>
+                    <li><a href="#" class="mega-list-link">Data Center & Infra</a></li>
+                    <li><a href="#" class="mega-list-link">Business Continuity</a></li>
+                    <li><a href="#" class="mega-list-link">Backup & Disaster Recovery</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Digital Workplace</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Microsoft 365</a></li>
+                    <li><a href="#" class="mega-list-link">Telefonia Digital</a></li>
+                    <li><a href="#" class="mega-list-link">Colaboração & Comunicação</a></li>
+                    <li><a href="#" class="mega-list-link">Digital Signage</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Segurança & Governança</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Segurança da Informação</a></li>
+                    <li><a href="#" class="mega-list-link">Gestão de Identidade</a></li>
+                    <li><a href="#" class="mega-list-link">Compliance & LGPD</a></li>
+                    <li><a href="#" class="mega-list-link">Monitoramento & NOC</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Automação & Dados</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Automação Comercial</a></li>
+                    <li><a href="#" class="mega-list-link">Power Platform</a></li>
+                    <li><a href="#" class="mega-list-link">Business Intelligence</a></li>
+                    <li><a href="#" class="mega-list-link">Integrações</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- PRODUTOS -->
+          <li class="nav-item nav-item--has-children">
+            <button class="nav-link" type="button" data-submenu-trigger>
+              <span class="nav-link-label">
+                <span class="nav-link-title">PRODUTOS</span>
+                <span class="nav-link-chevron">▾</span>
+              </span>
+            </button>
+
+            <div class="mega">
+              <div class="mega-inner mega-inner--with-hero">
+                <div class="mega-hero">
+                  <div class="mega-hero-media"></div>
+                  <div class="mega-hero-body">
+                    <div class="mega-column-title">Catálogo</div>
+                    <h3 class="mega-hero-title">Hardware, Dispositivos e Energia</h3>
+                    <p class="mega-hero-text">
+                      Tudo o que sua operação precisa, com curadoria técnica especializada.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Devices & Computação</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Notebooks</a></li>
+                    <li><a href="#" class="mega-list-link">Desktops & Workstations</a></li>
+                    <li><a href="#" class="mega-list-link">Servidores</a></li>
+                    <li><a href="#" class="mega-list-link">Smartphones & Tablets</a></li>
+                  </ul>
+
+                  <div class="mega-column-title" style="margin-top:16px;">Automação & PDV</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Automação Comercial</a></li>
+                    <li><a href="#" class="mega-list-link">Coletores & Leitores</a></li>
+                    <li><a href="#" class="mega-list-link">Displays & POS</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Impressão & Digitalização</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Impressoras</a></li>
+                    <li><a href="#" class="mega-list-link">Multifuncionais</a></li>
+                    <li><a href="#" class="mega-list-link">Suprimentos</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Infraestrutura & Energia</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Storage (HD / SSD)</a></li>
+                    <li><a href="#" class="mega-list-link">Networking (Switches)</a></li>
+                    <li><a href="#" class="mega-list-link">Nobreaks & Energia</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SERVIÇOS -->
+          <li class="nav-item nav-item--has-children">
+            <button class="nav-link" type="button" data-submenu-trigger>
+                <span class="nav-link-label">
+                <span class="nav-link-title active">SERVIÇOS</span>
+                <span class="nav-link-chevron">▾</span>
                 </span>
             </button>
 
-            <nav class="site-nav" data-nav aria-label="Navegação principal">
-                <div class="container nav-inner">
-                    <ul class="nav-list">
+            <div class="mega">
+                <div class="mega-inner mega-inner--with-hero">
+                <div class="mega-hero">
+                    <div class="mega-hero-media"></div>
+                    <div class="mega-hero-body">
+                    <div class="mega-column-title">Serviços Acronsoft</div>
+                    <h3 class="mega-hero-title">Consultoria, Gestão e Operação</h3>
+                    <p class="mega-hero-text">
+                        Do projeto à operação contínua, com especialistas dedicados.
+                    </p>
+                    </div>
+                </div>
 
-                        <li class="nav-item nav-item--has-children">
-                            <button class="nav-link" type="button" data-submenu-trigger>
-                                <span class="nav-link-label">
-                                    <span class="nav-link-title">SOBRE NÓS</span>
-                                    <span class="nav-link-chevron">▾</span>
-                                </span>
-                            </button>
-
-                            <div class="mega">
-                                <div class="mega-inner mega-inner--with-hero">
-                                    <div class="mega-hero">
-                                        <div class="mega-hero-media"></div>
-                                        <div class="mega-hero-body">
-                                            <div class="mega-column-title">Hardware</div>
-                                            <h3 class="mega-hero-title">Equipamentos e Infraestrutura</h3>
-                                            <p class="mega-hero-text">
-                                                Notebooks, servidores, dispositivos móveis e infraestrutura física.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Computação</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Notebooks</a></li>
-                                            <li><a href="#" class="mega-list-link">Desktops</a></li>
-                                            <li><a href="#" class="mega-list-link">Workstations</a></li>
-                                            <li><a href="#" class="mega-list-link">Servidores</a></li>
-                                        </ul>
-                                        <div class="mega-column-title" style="margin-top:16px;">Mobilidade</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Smartphones & Tablets</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Periféricos</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Monitores</a></li>
-                                            <li><a href="#" class="mega-list-link">Impressoras</a></li>
-                                            <li><a href="#" class="mega-list-link">Acessórios</a></li>
-                                        </ul>
-                                        <div class="mega-column-title" style="margin-top:16px;">Automação</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Automação Comercial</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Infra & Energia</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Storage / HD / SSD</a></li>
-                                            <li><a href="#" class="mega-list-link">Switch</a></li>
-                                            <li><a href="#" class="mega-list-link">Nobreak & Estabilizadores</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item nav-item--has-children">
-                            <button class="nav-link" type="button" data-submenu-trigger>
-                                <span class="nav-link-label">
-                                    <span class="nav-link-title">PRODUTOS</span>
-                                    <span class="nav-link-chevron">▾</span>
-                                </span>
-                            </button>
-
-                            <div class="mega">
-                                <div class="mega-inner mega-inner--with-hero">
-                                    <div class="mega-hero">
-                                        <div class="mega-hero-media"></div>
-                                        <div class="mega-hero-body">
-                                            <div class="mega-column-title">Hardware</div>
-                                            <h3 class="mega-hero-title">Equipamentos e Infraestrutura</h3>
-                                            <p class="mega-hero-text">
-                                                Notebooks, servidores, dispositivos móveis e infraestrutura física.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Computação</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Notebooks</a></li>
-                                            <li><a href="#" class="mega-list-link">Desktops</a></li>
-                                            <li><a href="#" class="mega-list-link">Workstations</a></li>
-                                            <li><a href="#" class="mega-list-link">Servidores</a></li>
-                                        </ul>
-                                        <div class="mega-column-title" style="margin-top:16px;">Mobilidade</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Smartphones & Tablets</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Periféricos</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Monitores</a></li>
-                                            <li><a href="#" class="mega-list-link">Impressoras</a></li>
-                                            <li><a href="#" class="mega-list-link">Acessórios</a></li>
-                                        </ul>
-                                        <div class="mega-column-title" style="margin-top:16px;">Automação</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Automação Comercial</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Infra & Energia</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Storage / HD / SSD</a></li>
-                                            <li><a href="#" class="mega-list-link">Switch</a></li>
-                                            <li><a href="#" class="mega-list-link">Nobreak & Estabilizadores</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item nav-item--has-children">
-                            <button class="nav-link" type="button" data-submenu-trigger>
-                                <span class="nav-link-label">
-                                    <span class="nav-link-title">SOFTWARE</span>
-                                    <span class="nav-link-chevron">▾</span>
-                                </span>
-                            </button>
-
-                            <div class="mega">
-                                <div class="mega-inner mega-inner--with-hero">
-                                    <div class="mega-hero">
-                                        <div class="mega-hero-media"></div>
-                                        <div class="mega-hero-body">
-                                            <div class="mega-column-title">Software</div>
-                                            <h3 class="mega-hero-title">Produtividade e Segurança</h3>
-                                            <p class="mega-hero-text">Licenciamento, colaboração e proteção de dados.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Produtividade</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Microsoft 365</a></li>
-                                            <li><a href="#" class="mega-list-link">Adobe Creative Cloud</a></li>
-                                            <li><a href="#" class="mega-list-link">Acrobat / Sign</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Segurança & Backup</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Kaspersky Security</a></li>
-                                            <li><a href="#" class="mega-list-link">Acronis Backup</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Infraestrutura</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Windows Server</a></li>
-                                            <li><a href="#" class="mega-list-link">SQL Server</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item nav-item--has-children">
-                            <button class="nav-link" type="button" data-submenu-trigger>
-                                <span class="nav-link-label">
-                                    <span class="nav-link-title">SOLUÇÕES &amp; CLOUD</span>
-                                    <span class="nav-link-chevron">▾</span>
-                                </span>
-                            </button>
-
-                            <div class="mega">
-                                <div class="mega-inner mega-inner--with-hero">
-                                    <div class="mega-hero">
-                                        <div class="mega-hero-media"></div>
-                                        <div class="mega-hero-body">
-                                            <div class="mega-column-title">Soluções</div>
-                                            <h3 class="mega-hero-title">Cloud e Serviços Gerenciados</h3>
-                                            <p class="mega-hero-text">Infraestrutura escalável e gestão especializada.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Cloud</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Data Center & Cloud</a></li>
-                                            <li><a href="#" class="mega-list-link">IaaS</a></li>
-                                            <li><a href="#" class="mega-list-link">BaaS (Backup)</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Gestão</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Management & NOC</a></li>
-                                            <li><a href="#" class="mega-list-link">Networking & Segurança</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Governança</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Governança & Compliance</a></li>
-                                            <li><a href="#" class="mega-list-link">Consultorias</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item nav-item--has-children">
-                            <button class="nav-link" type="button" data-submenu-trigger>
-                                <span class="nav-link-label">
-                                    <span class="nav-link-title">SERVIÇOS</span>
-                                    <span class="nav-link-chevron">▾</span>
-                                </span>
-                            </button>
-
-                            <div class="mega">
-                                <div class="mega-inner mega-inner--with-hero">
-                                    <div class="mega-hero">
-                                        <div class="mega-hero-media"></div>
-                                        <div class="mega-hero-body">
-                                            <div class="mega-column-title">Serviços</div>
-                                            <h3 class="mega-hero-title">Suporte e Consultoria</h3>
-                                            <p class="mega-hero-text">Apoio técnico do projeto à operação contínua.</p>
-                                        </div>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Projetos</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Implementação & Migração</a></li>
-                                            <li><a href="#" class="mega-list-link">Consultoria</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Gestão</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Gestão de Identidade</a></li>
-                                            <li><a href="#" class="mega-list-link">Gestão de Segurança</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Operação</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Suporte Continuado</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item nav-item--has-children">
-                            <button class="nav-link" type="button" data-submenu-trigger>
-                                <span class="nav-link-label">
-                                    <span class="nav-link-title">APPLE NOS NEGÓCIOS</span>
-                                    <span class="nav-link-chevron">▾</span>
-                                </span>
-                            </button>
-
-                            <div class="mega">
-                                <div class="mega-inner mega-inner--with-hero">
-                                    <div class="mega-hero">
-                                        <div class="mega-hero-media"></div>
-                                        <div class="mega-hero-body">
-                                            <div class="mega-column-title">Apple</div>
-                                            <h3 class="mega-hero-title">Ecossistema Apple</h3>
-                                            <p class="mega-hero-text">iPhone, Mac e iPad integrados à sua empresa.</p>
-                                        </div>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Dispositivos</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">iPhone</a></li>
-                                            <li><a href="#" class="mega-list-link">iPad</a></li>
-                                            <li><a href="#" class="mega-list-link">Mac</a></li>
-                                            <li><a href="#" class="mega-list-link">Apple TV</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column">
-                                        <div class="mega-column-title">Soluções</div>
-                                        <ul class="mega-list">
-                                            <li><a href="#" class="mega-list-link">Apple Business Manager</a></li>
-                                            <li><a href="#" class="mega-list-link">Apple Financial Services</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-list-column"></div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item nav-item--has-children">
-                            <button class="nav-link" type="button" data-submenu-trigger>
-                                <span class="nav-link-label">
-                                    <span class="nav-link-title">CONTATO</span>
-                                    <span class="nav-link-chevron">▾</span>
-                                </span>
-                            </button>
-
-                            <div class="mega">
-                                <div class="mega-inner mega-inner--with-hero">
-                                    <div class="mega-hero">
-                                        <div class="mega-hero-media"></div>
-                                        <div class="mega-hero-body">
-                                            <div class="mega-column-title">Hardware</div>
-                                            <h3 class="mega-hero-title">Equipamentos e Infraestrutura</h3>
-                                            <p class="mega-hero-text">
-                                                Notebooks, servidores, dispositivos móveis e infraestrutura física.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-
-
+                <div class="mega-list-column">
+                    <div class="mega-column-title">Projetos</div>
+                    <ul class="mega-list">
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Implementação de Soluções"
+                        data-text="Planejamento e execução de projetos com foco em aderência técnica e resultado."
+                        data-image="./assets/img-servicos-implementacao.jpg">
+                        Implementação
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Migração Segura"
+                        data-text="Transição de ambientes com risco controlado e zero perda de dados."
+                        data-image="./assets/img-servicos-migracao.jpg">
+                        Migração
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Rollout de Equipamentos"
+                        data-text="Distribuição técnica de equipamentos com agilidade e rastreabilidade."
+                        data-image="./assets/img-servicos-rollout.jpg">
+                        Rollout
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Consultoria Técnica"
+                        data-text="Diagnóstico, desenho de soluções e apoio estratégico para TI corporativa."
+                        data-image="./assets/img-servicos-consultoria.jpg">
+                        Consultoria Técnica
+                        </a>
+                    </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
+
+                <div class="mega-list-column">
+                    <div class="mega-column-title">Serviços Gerenciados</div>
+                    <ul class="mega-list">
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Suporte Continuado"
+                        data-text="Atendimento técnico ágil, recorrente e especializado."
+                        data-image="./assets/img-servicos-suporte.jpg">
+                        Suporte Continuado
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Monitoramento 24/7"
+                        data-text="Ambientes monitorados proativamente com resposta em tempo real."
+                        data-image="./assets/img-servicos-monitoramento.jpg">
+                        Monitoramento
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Gestão de Infraestrutura"
+                        data-text="Gerenciamento completo de redes, servidores e ambientes cloud."
+                        data-image="./assets/img-servicos-infra.jpg">
+                        Gestão de Infra
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Gestão de Segurança"
+                        data-text="Governança e controle de riscos em todos os níveis da TI."
+                        data-image="./assets/img-servicos-seguranca.jpg">
+                        Gestão de Segurança
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="mega-list-column">
+                    <div class="mega-column-title">Governança & ESG</div>
+                    <ul class="mega-list">
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Governança de TI"
+                        data-text="Processos e políticas para eficiência e compliance no uso da tecnologia."
+                        data-image="./assets/img-servicos-governanca.jpg">
+                        Governança de TI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Compliance"
+                        data-text="Alinhamento de TI às normas, regulamentos e boas práticas."
+                        data-image="./assets/img-servicos-compliance.jpg">
+                        Compliance
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Lifecycle (ESG)"
+                        data-text="Gestão do ciclo de vida de ativos com foco em sustentabilidade."
+                        data-image="./assets/img-servicos-esg.jpg">
+                        Lifecycle (ESG)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mega-list-link"
+                        data-title="Garantia Estendida"
+                        data-text="Cobertura técnica e logística além da garantia de fábrica."
+                        data-image="./assets/img-servicos-garantia.jpg">
+                        Garantia Estendida
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </li>
+
+
+          <!-- APPLE -->
+          <li class="nav-item nav-item--has-children">
+            <button class="nav-link" type="button" data-submenu-trigger>
+              <span class="nav-link-label">
+                <span class="nav-link-title">APPLE NOS NEGÓCIOS</span>
+                <span class="nav-link-chevron">▾</span>
+              </span>
+            </button>
+
+            <div class="mega">
+              <div class="mega-inner mega-inner--with-hero">
+                <div class="mega-hero">
+                  <div class="mega-hero-media"></div>
+                  <div class="mega-hero-body">
+                    <div class="mega-column-title">Apple</div>
+                    <h3 class="mega-hero-title">Ecossistema Apple Corporativo</h3>
+                    <p class="mega-hero-text">
+                      Dispositivos, gestão e financiamento Apple para empresas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Dispositivos Apple</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">iPhone</a></li>
+                    <li><a href="#" class="mega-list-link">iPad</a></li>
+                    <li><a href="#" class="mega-list-link">Mac</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-list-column">
+                  <div class="mega-column-title">Gestão & Soluções</div>
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Apple Business Manager</a></li>
+                    <li><a href="#" class="mega-list-link">Gestão & MDM (Jamf)</a></li>
+                    <li><a href="#" class="mega-list-link">Financiamento Apple</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- A ACRONSOFT -->
+          <li class="nav-item nav-item--has-children">
+            <button class="nav-link" type="button" data-submenu-trigger>
+              <span class="nav-link-label">
+                <span class="nav-link-title">A ACRONSOFT</span>
+                <span class="nav-link-chevron">▾</span>
+              </span>
+            </button>
+
+            <div class="mega">
+              <div class="mega-inner mega-inner--with-hero">
+                <div class="mega-hero">
+                  <div class="mega-hero-media"></div>
+                  <div class="mega-hero-body">
+                    <div class="mega-column-title">Institucional</div>
+                    <h3 class="mega-hero-title">Conheça a Acronsoft</h3>
+                    <p class="mega-hero-text">
+                      Pessoas, parceiros e expertise movendo resultados.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mega-list-column">
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Quem Somos</a></li>
+                    <li><a href="#" class="mega-list-link">Parceiros & Fabricantes</a></li>
+                    <li><a href="#" class="mega-list-link">Certificações</a></li>
+                    <li><a href="#" class="mega-list-link">Cases & Clientes</a></li>
+                    <li><a href="#" class="mega-list-link">Trabalhe Conosco</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- CONTATO -->
+          <li class="nav-item nav-item--has-children">
+            <button class="nav-link" type="button" data-submenu-trigger>
+              <span class="nav-link-label">
+                <span class="nav-link-title">CONTATO</span>
+                <span class="nav-link-chevron">▾</span>
+              </span>
+            </button>
+
+            <div class="mega">
+              <div class="mega-inner mega-inner--with-hero">
+                <div class="mega-hero">
+                  <div class="mega-hero-media"></div>
+                  <div class="mega-hero-body">
+                    <div class="mega-column-title">Contato</div>
+                    <h3 class="mega-hero-title">Fale com um Especialista</h3>
+                    <p class="mega-hero-text">
+                      Estamos prontos para entender seu desafio.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mega-list-column">
+                  <ul class="mega-list">
+                    <li><a href="#" class="mega-list-link">Falar com Especialista</a></li>
+                    <li><a href="#" class="mega-list-link">Suporte</a></li>
+                    <li><a href="#" class="mega-list-link">Localização</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
 
     <section class="hero">
         <div class="container stack stack--lg">

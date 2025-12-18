@@ -152,6 +152,14 @@ a, .nav-link, .mega-list-link {
   text-decoration: none;
   transition: color var(--motion-fast);
 }
+.mega-list-link{
+  margin-bottom: 4px;
+}
+.active {
+  color: var(--color-brand-primary);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: underline;
+}
 a:hover, .nav-link:hover, .mega-list-link:hover {
   color: var(--color-brand-primary);
 }
@@ -161,6 +169,8 @@ ul {
 button {
   font-family: inherit;
 }
+
+
 
 /* =========================
    TYPOGRAPHY
@@ -642,11 +652,11 @@ button {
     margin-bottom: 8px;
   }
   .mega-column-title {
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
     color: var(--color-neutral-500);
-    font-weight: 700;
-    margin-bottom: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
     letter-spacing: 0.05em;
   }
   .mega-list { gap: 8px; }
@@ -959,6 +969,28 @@ textarea.form-control {
 .colaboracao   { bottom: 10%; left: 0; }
 .rede          { top: 38%;  left: 0; }
 .software      { top: 15%;  left: 10%; }
+
+/* Oculta o mega menu por padrão */
+.nav-item--has-children .mega {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Exibe o mega menu ao ativar a classe */
+.nav-item--has-children.is-active .mega {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
 
 
