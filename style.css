@@ -709,6 +709,7 @@ textarea.form-control {
 /* =========================
    CARDS
    ========================= */
+
 .card-transparent {
   display: flex;
   flex-direction: column;
@@ -722,6 +723,20 @@ textarea.form-control {
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
   border-color: rgba(209, 213, 219, 0.7);
+}
+.card-bold {
+  border: 1.8px solid var(--color-neutral-300)!important;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+  transition: all var(--motion-base);
+}
+.card-bold:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
   .card-light {
   display: flex;
