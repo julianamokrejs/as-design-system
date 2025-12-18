@@ -653,9 +653,8 @@ button {
   }
   .mega-column-title {
     font-size: 12px;
-    text-transform: uppercase;
-    color: var(--color-neutral-500);
-    font-weight: 500;
+    color: var(--color-neutral-900);
+    font-weight: 700;
     margin-bottom: 8px;
     letter-spacing: 0.05em;
   }
